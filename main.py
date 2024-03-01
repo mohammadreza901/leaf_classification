@@ -2,7 +2,7 @@ import streamlit as st
 from ultralytics import YOLO
 import time
 from PIL import Image
-model=YOLO("../Model/best.pt")
+model=YOLO("best.pt")
 st.title("Leaf-Detection API")
 imagefile=st.file_uploader("Upload an image", type="jpg")
 if imagefile is not None:
